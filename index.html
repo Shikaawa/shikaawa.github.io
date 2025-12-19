@@ -6,6 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shikanichiwaru - Home</title>
+    <link rel="shortcut icon" href="icon.png">
+    <meta property="og:title" content="Home"/>
+    <meta property="og:site_name" content="Shikanichiwaru"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="A small furry developer and artist exploring around the internet!" />
+    <meta property="og:image" content="https://shikaawa.github.io/banner.png" />
+    <!--
+        Source - https://stackoverflow.com/a
+        Posted by Victor
+        Retrieved 2025-12-19, License - CC BY-SA 4.0
+    -->
+    <meta name="twitter:site" content="@shikaawa">
+    <meta name="twitter:title" content="Home">
+    <meta name="twitter:description" content="A small furry developer and artist exploring around the internet!">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:src" content="https://shikaawa.github.io/banner.png">
 </head>
 <style>
     body {
@@ -27,6 +43,7 @@
     .header {
         display: grid;
         grid-template-columns: 120px 1fr;
+        justify-content: center;
         margin-bottom: 20px;
     }
 
@@ -38,9 +55,19 @@
         width: 100%;
     }
 
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     h1 {
-        font-size: 2rem;
-        margin-bottom: 5px;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .header p {
+        margin: 0px;
     }
 
     p {
@@ -67,17 +94,12 @@
     }
 
     @media (max-width: 768px) {
-        .header {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-
         .icon {
             max-width: 100px;
         }
 
         h1 {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
     }
 </style>
